@@ -1,0 +1,11 @@
+{
+	"name": "<%=config.name%>",
+	"version": "0.1.0",
+	"description": "<%=config.desc%>",
+	"map": {
+		"6.1.0": {
+			"hybrid_version": "0.1.0",
+			"src": "http://lvyou2.bdimg.com/static/<%=config.preName%>/<%=config.name%>_0.1.0.zip"
+		}
+	}
+}

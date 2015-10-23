@@ -1,0 +1,48 @@
+
+.lv_m_slidermenu {
+	padding: 10px 0 40px;
+	color: #333;
+	line-height: 20px;
+	.menuitem {
+		background: #fff;
+		margin: 0 8px 10px;
+		border-radius: 2px;
+		.head {
+			padding: 13px 0;
+			h3 {
+				border-left: 3px solid #2dc7cc;
+				padding: 0 0 0 7px;
+				position: relative;
+				i {
+					display: block;
+					width: 8px;
+					height: 14px;
+					background: url(imgs/right.png?__inline) no-repeat;
+					background-size: 8px auto;	
+					position: absolute;
+					top: 4px;
+					right: 10px;
+					transform: rotate(90deg);
+				}
+			}
+		}
+		.body {
+			padding: 0 13px 10px;
+			overflow: hidden;
+			color: #666;
+			display: none;
+		}
+	}
+	.on {
+		.head {
+			h3 {
+				i {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+		.body {
+			display: block;
+		}
+	}
+}

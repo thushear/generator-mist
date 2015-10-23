@@ -1,0 +1,30 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<script name="baidu-tc-cerfication" type="text/javascript" charset="utf-8" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
+<input id="ipt" type="text" placeholder="选择城市">
+<script type="text/javascript">
+    onAppReady(function(){
+        var PopScene = require('ui/popscene/index');
+        var Scene = new PopScene();
+        $("#ipt").on("tap",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            Scene.show();
+        })
+        
+
+        Blend.lightInit({
+                ak: "MkI6Wk2m1zukoCxROHrflXyo",// 运用百度云能力必须申请，若不用可删除本行
+            module:["app","account","blendui","geolocation"] // Blend的ui能力、本地设备能力和云能力按照module分别加载使用
+        });
+        clouda.device.geolocation.get({
+            onsuccess:function(data){
+                // alert(data.longitude+"|"+data.latitude)
+            },
+            onfail:function(error){
+                // alert(error)
+                
+            }
+        })
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

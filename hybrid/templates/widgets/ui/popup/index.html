@@ -1,0 +1,34 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<link rel="stylesheet" type="text/css" href="/widgets/ui/popup/index.less" />
+<input type="button" value="打开弹层" id="open"><br>
+<input type="text" value="" id="title" placeholder="这里输入标题">
+<input type="button" value="打开设置的标题" id="opentitle"><br>
+<textarea placeholder="输入内容" id="content"></textarea>
+<input type="button" value="打开设置的内容" id="opencontent"><br>
+<input type="button" value="不包含头部" id="nohead">
+<script type="text/javascript">
+    onAppReady(function(){
+        var Popup = require('ui/popup/index');
+        var p = new Popup();
+        $("#open").on("tap",function(){
+        	p.show()
+        })
+        $("#opentitle").on("tap",function(){
+        	var title = $("#title").val();
+        	p.setTitle(title);
+        	p.show();
+        })
+        $("#opencontent").on("tap",function(){
+        	var content = $("#content").val();
+        	p.setContent(content);
+        	p.show();
+        })
+        $("#nohead").on("tap",function(){
+            var p1 = new Popup({
+                hasHead:false
+            });
+            p1.show()
+        })
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

@@ -1,0 +1,10 @@
+{
+  "name": "<%=config.name%>",
+  "version": "0.1.0",
+  "description": "<%=config.desc%>",
+  "author": "<%=config.author%>(<%=config.email%>)",
+  "keywords": [
+    "fis",
+    "hybrid"
+  ]
+}

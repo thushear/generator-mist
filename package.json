@@ -1,0 +1,19 @@
+{
+  "name": "generator-mist",
+  "version": "0.1.6",
+  "description": "百度旅游前端脚手架工具",
+  "author": "bluestrings",
+  "files": [
+    "app",
+    "fisp",
+    "h",
+    "hybrid","page","widget"
+  ],
+  "keywords": ["yeoman-generator", "baidu", "baidutravel"],
+  "dependencies": {
+    "yeoman-generator": "^0.20.2",
+    "yosay": "^1.0.4",
+    "mkdirp":"^0.5.1",
+    "chalk":""
+  }
+}

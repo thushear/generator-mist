@@ -1,0 +1,20 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<!--引入该页面css文件-->
+<link rel="stylesheet" type="text/css" href="" />
+
+<!--页面内容-->
+<section class="J_Wrap"></section>
+
+<!--juicer模版-->
+<script type="text/template" id=""></script>
+
+
+<!--引入业务相关controller-->
+<script type="text/javascript">
+    onAppReady(function(){
+        require.async('', function(ctl){
+            new ctl();
+        });
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

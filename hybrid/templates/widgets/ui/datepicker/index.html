@@ -1,0 +1,51 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<link rel="stylesheet" type="text/css" href="/widgets/ui/datepicker/index.less" />
+
+<div id="container"></div>
+<script type="text/javascript">
+function strToDate(str) {
+    var arr = str.split('-');
+    return new Date(arr[0], arr[1]-1, arr[2]);
+}
+    onAppReady(function(){
+        var datepicker = require('ui/datepicker/index');
+        var pc = new datepicker({
+            firstDate: strToDate("2015-09-07"),
+            lastDate: strToDate("2015-09-24"),
+            ctn: '#container',
+            priceUrl: '/business/ajax/vacation/detail',
+            async: false,
+            map: {
+                "2015-09-07":{
+                    adultprice: "2599",
+                    availablecount: "6",
+                    containchildprice: "false",
+                    marketprice: "4599",
+                    maxbuycount: "6",
+                    minbuycount: "2",
+                    roomnum: "2",
+                    status: "1",
+                    takeoffdate: "2015-09-07",
+                    teamId: "531296968"
+                }
+            }
+        });
+
+    // //选择价格日历组件，右侧的日历组件需要联动
+        // $(pc).bind('select', function (e, data) {
+        //     var d = data.date.split('-');
+        //     $('#select-buy-ctn .date-picker').datepicker("setDate", d[0] + '-' + (d[1]) + '-' + d[2]);
+        //     //更新价格
+        //     $('.J_Price').html('¥' + comma(data.price));
+        //     params.date = d[0] + '-' + d[1] + '-' + d[2];
+        //     data.teamId && (params['date_id'] = data.teamId);
+        // });
+
+    //     $(pc).bind('selectBy', function (e, data) {
+    //         params['date_id'] = data.teamId;
+    //     });
+        pc.init();
+        
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

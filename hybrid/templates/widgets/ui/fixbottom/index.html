@@ -1,0 +1,39 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<link rel="stylesheet" type="text/css" href="/widgets/ui/fixbottom/index.less" />
+<style type="text/css">
+    body{
+        height: 2000px;
+    }
+    /*自己定义的内容样式*/
+    .tel,.book{
+		display: block;
+	}
+	.tel a{
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAMAAABVyG9ZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ5QTZFQ0YzNEM2NjExRTU4QTMyRUZEMTRCNDc5NThFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ5QTZFQ0Y0NEM2NjExRTU4QTMyRUZEMTRCNDc5NThFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDlBNkVDRjE0QzY2MTFFNThBMzJFRkQxNEI0Nzk1OEUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDlBNkVDRjI0QzY2MTFFNThBMzJFRkQxNEI0Nzk1OEUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz51gXpxAAAA9lBMVEXh9/gvx800yc79/v7r+vqQ4eQ3yc48y9Be1Njz/PwyyM267O74/f36/v6o6Orm+Pnf9vfw+/uc5efp+fqh5uit6etw2dyD3uFo19pm1tqf5ehy2d2B3eDu+vtX0tbT8/Sa5Oak5uk+y9CL4OPO8vNBzNGG3+Kw6uxh1dmr6Ot12t13297V9PVr19uX4+ZNz9RGzdL1/P3E7/HJ8PI5ys+x6uxLz9P2/f2m5+nX9PVj1dmS4uRc09eV4+V+3eC87e/k+Ph73N/a9fZDzdFU0daH3+K16+1629+S4uVIztOy6uy/7u9t2Nzc9vfL8fJP0NQtx8z///+knzJaAAABOUlEQVR42mSS5ZbCMBSE60ZxaHF3VrB1Yd1l8v4vsxGWA0l+dKb5ctLbe0cjhGjt12nlgchLIySngy3bVNAQnZe8tX5HQUbWys0z4/8GmoQKKAqXwJuEbrE5XEdVQlN8C2cpqIYD4cY4kpCNDDdpN0hLaIwFk9xKLf4HN1RiOCmlG6HhURlsrt3vRlmn38jINXBURItq5ORV5DuzJNVglFQ73wWroIWaiizHzRJifsHmO8VLHaNUkiNSwYQ+wzKqPglLwOkx4PkcmR7OmQzgpiYo39FWRyhxRNId/ZPpRx+Y8WrMa/TERJqGkWA6jxGLGnq42gxr6eg5brKh2Mji/n/oF48o7QZAw/P21TqE0a1vkY2TnZOLJxhRYi6CovfP9lI0pD8UeLV2hd6wJFLAmnaD57VBU/EnwAADhbXGgqffJQAAAABJRU5ErkJggg==) no-repeat 0 2px;
+		background-size: 13px auto;
+		padding: 0 0 0 20px;
+		color: #333;
+	}
+	.book{
+		background: #fd602a;
+	}
+	.book a{
+		color: #fff;
+	}
+</style>
+<script type="text/javascript">
+    onAppReady(function(){
+        var FixBottom = require('ui/fixbottom/index');
+        new FixBottom({
+        	data:[{
+				pb:"",//统计代码
+				content:'<span class="tel"><a href="tel:15710087928">电话预约商家</a></span>'
+			},{
+				pb:"",
+				content:'<span class="book"><a href="javascript:;">立即预订</a></span>'
+			}],
+        })
+        
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度旅游</title>
+    <meta name="description" content="百度旅游"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="/widgets/css-widgets/css-reset/reset.css?__inline"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/css-widgets/css-iconfont/iconfont.css?__inline"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/css-widgets/base.css?__inline"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/css-widgets/css-loading/loading.less?__inline"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/css-widgets/css-tip/tip.less?__inline"/>
+    <script type="text/javascript" src="/lib/mod.js?__inline"></script>
+</head>
+<body>
+<script type="text/javascript" src="/lib/init.js?__inline"></script>
+<!--引入该页面css文件-->
+<link rel="stylesheet" type="text/css" href="" />
+
+<!--页面内容-->
+<section class="J_Wrap"></section>
+
+<!--juicer模版-->
+<script type="text/template" id=""></script>
+
+
+<!--引入业务相关controller-->
+<script type="text/javascript">
+    onAppReady(function(){
+        require.async('', function(ctl){
+            new ctl();
+        });
+    });
+</script>
+<script type="text/template" id="errorMsgTpl">
+    <div class="m-error-tips-ctn">
+        <div class="m-error-tips">
+            <div class="m-error-icon"></div>
+            <div class="m-error-txt">网络不给力啊</div>
+            <a class="m-btn m-btn-default m-error-btn">重新加载</a>
+        </div>
+    </div>
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<link rel="stylesheet" type="text/css" href="/widgets/ui/slidermenu/index.less" />
+<style type="text/css">
+    body{
+        background: #ecedf1;
+    }
+</style>
+<div id="container" style="background:blue;width:200px;"></div>
+<script type="text/javascript">
+    onAppReady(function(){
+        var SliderMenu = require('ui/slidermenu/index');
+        new SliderMenu();
+        //支持多实例
+        new SliderMenu({
+            container:"#container"
+        });
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">

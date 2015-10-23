@@ -1,0 +1,22 @@
+<link rel="import" href="/page/layout/header.html?__inline">
+<div class="wrap">
+    <div class="top"></div>
+    <div class="body"></div>
+</div>
+<script type="text/javascript">
+    onAppReady(function(){
+        var Head = require('ui/pub-head/index');
+        new Head({
+            container:".top",
+            cback:"http://www.baidu.com",
+            hasHead:true,
+            title:"九寨沟门票预订"
+        });
+
+        // var title = "bbb";
+        // var p = new Head({});
+        // p.setTitle(title);
+    //    p.isHide();
+    });
+</script>
+<link rel="import" href="/page/layout/footer.html?__inline">
